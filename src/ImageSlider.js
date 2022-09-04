@@ -79,9 +79,10 @@ const ImageSlider = ({ slides }) => {
       <div style={slideStyles}></div>
       <div style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => (
-          <div style={dotStyles} 
-          key={slideIndex}
-          onClick={() => goToSlide(slideIndex)}
+          <div
+            style={dotStyles}
+            key={slideIndex}
+            onClick={() => goToSlide(slideIndex)}
           >
             ●
           </div>
